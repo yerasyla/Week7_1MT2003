@@ -2,6 +2,7 @@ package com.company;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Scanner;
 
 interface Func1{
     int operation(int a, int b);
@@ -16,6 +17,10 @@ public class Main{
     public static void main(String[] args) {
         System.out.println("Login to your account");
 
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Enter username and pass");
+        String user_name= scan.next();
+        String password= scan.next();
 
         Func1 add = (int a, int b) -> a+b;
         Main main1= new Main();
